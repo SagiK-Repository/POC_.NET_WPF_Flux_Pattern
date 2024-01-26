@@ -1,16 +1,35 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 
 namespace WPF
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private string _numberSTring;
+        public string NumberString
+        {
+            get { return _numberSTring; }
+            set
+            {
+                _numberSTring = value;
+                OnPropertyChanged(nameof(NumberString));
+            }
+        }
         public MainWindow()
         {
+            NumberString = "0";
+            DataContext = this;
             InitializeComponent();
         }
         private void OpenSubWindow_Click(object sender, RoutedEventArgs e)
         {
-            SubWindow numberInputWindow = new SubWindow(int.Parse(numberTextBlock.Text));
+            SubWindow numberInputWindow = new SubWindow(int.Parse(NumberString));
             numberInputWindow.Owner = this;
             numberInputWindow.ShowDialog();
 
@@ -18,8 +37,9 @@ namespace WPF
             if (isSave)
             {
                 int enteredNumber = numberInputWindow.EnteredNumber;
-                numberTextBlock.Text = enteredNumber.ToString();
+                NumberString = enteredNumber.ToString();
             }
         }
+
     }
 }

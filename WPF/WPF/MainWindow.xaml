@@ -10,7 +10,7 @@
                 VerticalAlignment="Center">
         <TextBlock Text="현재 숫자" />
         <TextBlock x:Name="numberTextBlock"
-                   Text="0"
+                   Text="{Binding NumberString, Mode=OneWay}"
                    FontSize="24"
                    FontWeight="Bold"
                    Margin="0 10" />
