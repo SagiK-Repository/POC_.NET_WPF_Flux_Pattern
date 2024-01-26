@@ -4,16 +4,20 @@ namespace WPF
 {
     public partial class SubWindow : Window
     {
+        public string EnterString { get; set; }
         public int EnteredNumber { get; private set; }
 
-        public SubWindow()
+        public SubWindow(int enterNumber)
         {
+            EnteredNumber = enterNumber;
+            EnterString = EnteredNumber.ToString();
+            DataContext = this;
             InitializeComponent();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(numberTextBox.Text, out int enteredNumber))
+            if (int.TryParse(EnterString, out int enteredNumber))
             {
                 EnteredNumber = enteredNumber;
                 DialogResult = true;

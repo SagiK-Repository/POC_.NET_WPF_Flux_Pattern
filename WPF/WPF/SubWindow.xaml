@@ -10,6 +10,7 @@
                 VerticalAlignment="Center">
         <TextBlock Text="숫자를 입력하세요:" />
         <TextBox x:Name="numberTextBox"
+                 Text="{Binding EnterString, Mode=TwoWay}"
                  Width="100"
                  Margin="0 10" />
         <StackPanel Orientation="Horizontal"

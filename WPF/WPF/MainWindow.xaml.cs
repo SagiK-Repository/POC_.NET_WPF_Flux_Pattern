@@ -10,7 +10,7 @@ namespace WPF
         }
         private void OpenSubWindow_Click(object sender, RoutedEventArgs e)
         {
-            SubWindow numberInputWindow = new SubWindow();
+            SubWindow numberInputWindow = new SubWindow(int.Parse(numberTextBlock.Text));
             numberInputWindow.Owner = this;
             numberInputWindow.ShowDialog();
 
