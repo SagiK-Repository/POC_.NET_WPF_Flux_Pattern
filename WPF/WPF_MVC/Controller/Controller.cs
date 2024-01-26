@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WPF_MVC
+﻿namespace WPF_MVC
 {
     public class Controller
     {
