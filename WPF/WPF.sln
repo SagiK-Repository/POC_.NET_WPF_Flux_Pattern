@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_MVC", "WPF_MVC\WPF_MVC.csproj", "{52F848BB-7193-42D0-8DA5-16D19D025A20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_MVVM", "WPF_MVVM\WPF_MVVM.csproj", "{32A5CB25-0258-4EA8-A5EF-DA2A0B738138}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{52F848BB-7193-42D0-8DA5-16D19D025A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52F848BB-7193-42D0-8DA5-16D19D025A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52F848BB-7193-42D0-8DA5-16D19D025A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A5CB25-0258-4EA8-A5EF-DA2A0B738138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A5CB25-0258-4EA8-A5EF-DA2A0B738138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A5CB25-0258-4EA8-A5EF-DA2A0B738138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A5CB25-0258-4EA8-A5EF-DA2A0B738138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
