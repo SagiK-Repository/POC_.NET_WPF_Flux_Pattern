@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Windows;
+using WPF_Flux_INotifyPropertyChanged.Flux;
 
 namespace WPF_Flux_INotifyPropertyChanged
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
 
@@ -18,7 +16,7 @@ namespace WPF_Flux_INotifyPropertyChanged
             _store = new Store<CounterState>(new CounterState(), CounterReducer.Reduce);
             _store.PropertyChanged += OnStorePropertyChanged;
 
-            WPF_Flux_INotifyPropertyChanged.Dispatcher.Dispatch += action => action();
+            Utilities.Dispatcher.Dispatch += action => action();
         }
 
         private void OnStorePropertyChanged(object sender, PropertyChangedEventArgs e)

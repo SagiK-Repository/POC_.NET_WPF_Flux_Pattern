@@ -1,12 +1,19 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WPF_Flux_INotifyPropertyChanged;
+namespace WPF_Flux_INotifyPropertyChanged.Flux;
 
 public class Store<T> : IStore<T>, INotifyPropertyChanged
 {
     private readonly Reducer<T> _reduce;
     private T _state;
+    public static Store<T> Instance { get; } = new Store<T>();
+
+    public Store()
+    {
+        _state = default(T);
+        _reduce = null;
+    }
 
     public Store(in T initialState, in Reducer<T> reducer)
     {

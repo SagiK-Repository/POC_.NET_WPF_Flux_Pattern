@@ -1,4 +1,4 @@
-﻿namespace WPF_Flux_INotifyPropertyChanged;
+﻿namespace WPF_Flux_INotifyPropertyChanged.Flux;
 
 public interface IStore<T>
 {
