@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Flux_MVVM_INotifyProper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Flux_MVVM_DevExpress", "WPF_Flux_MVVM_DevExpress\WPF_Flux_MVVM_DevExpress.csproj", "{EB1B4823-4670-4451-B25F-9F7FDE4A5781}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Flux_MVVM_DevExprfess_IObservable", "WPF_Flux_MVVM_DevExprfess_IObservable\WPF_Flux_MVVM_DevExprfess_IObservable.csproj", "{2B6EBDF4-3589-4963-B7BC-A1D102EB7611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EB1B4823-4670-4451-B25F-9F7FDE4A5781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB1B4823-4670-4451-B25F-9F7FDE4A5781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB1B4823-4670-4451-B25F-9F7FDE4A5781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B6EBDF4-3589-4963-B7BC-A1D102EB7611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6EBDF4-3589-4963-B7BC-A1D102EB7611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6EBDF4-3589-4963-B7BC-A1D102EB7611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6EBDF4-3589-4963-B7BC-A1D102EB7611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
