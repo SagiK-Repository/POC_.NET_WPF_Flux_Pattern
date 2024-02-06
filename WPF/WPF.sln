@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_MVVM_DevExpress", "WPF_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Flux", "WPF_Flux\WPF_Flux.csproj", "{D14BE2DB-0740-4C0A-9E8C-1FE1B3263F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Flux_INotifyPropertyChanged", "WPF_Flux_INotifyPropertyChanged\WPF_Flux_INotifyPropertyChanged.csproj", "{00D868FD-41D1-4016-8FA1-6F6D01005588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Flux_MVVM_INotifyPropertyChanged", "WPF_Flux_INotifyPropertyChanged\WPF_Flux_MVVM_INotifyPropertyChanged.csproj", "{00D868FD-41D1-4016-8FA1-6F6D01005588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
