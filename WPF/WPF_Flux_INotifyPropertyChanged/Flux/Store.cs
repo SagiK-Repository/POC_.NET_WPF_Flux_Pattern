@@ -1,44 +1,30 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using WPF_Flux_INotifyPropertyChanged.Interface;
 
 namespace WPF_Flux_INotifyPropertyChanged.Flux;
 
-public class Store<T> : IStore<T>, INotifyPropertyChanged
+public sealed class Store<T> : IStore<T>, INotifyPropertyChanged
 {
     private readonly Reducer<T> _reduce;
-    private T _state;
-    public static Store<T> Instance { get; } = new Store<T>();
-
-    public Store()
-    {
-        _state = default(T);
-        _reduce = null;
-    }
 
     public Store(in T initialState, in Reducer<T> reducer)
     {
-        _state = initialState;
+        State = initialState;
         _reduce = reducer;
     }
 
-    public T State
-    {
-        get { return _state; }
-        private set
-        {
-            _state = value;
-            OnPropertyChanged(nameof(State));
-        }
-    }
+    public T State { get; private set; }
 
     public void Dispatch(IFluxAction action)
     {
         var newState = _reduce(State, action);
         if (EqualityComparer<T>.Default.Equals(newState, State)) return;
         State = newState;
+        OnPropertyChanged(nameof(State));
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     private void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
