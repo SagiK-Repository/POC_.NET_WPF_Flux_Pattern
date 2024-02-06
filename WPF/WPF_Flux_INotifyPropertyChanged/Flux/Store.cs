@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WPF_Flux_INotifyPropertyChanged.Interface;
+using WPF_MVVM_Flux_INotifyPropertyChanged.Interface;
 
-namespace WPF_Flux_INotifyPropertyChanged.Flux;
+namespace WPF_MVVM_Flux_INotifyPropertyChanged.Flux;
 
 public sealed class Store<T> : IStore<T>, INotifyPropertyChanged
 {

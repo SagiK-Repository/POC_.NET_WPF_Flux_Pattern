@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using WPF_Flux_INotifyPropertyChanged.Flux;
-using WPF_Flux_INotifyPropertyChanged.Interface;
+using WPF_MVVM_Flux_INotifyPropertyChanged.Flux;
+using WPF_MVVM_Flux_INotifyPropertyChanged.Interface;
 
-namespace WPF_Flux_INotifyPropertyChanged.ViewModel
+namespace WPF_MVVM_Flux_INotifyPropertyChanged.ViewModel
 {
     public class MainViewModel : INotifyPropertyChanged
     {

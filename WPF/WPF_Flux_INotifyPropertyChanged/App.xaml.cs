@@ -1,8 +1,6 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
 
-namespace WPF_Flux_INotifyPropertyChanged
+namespace WPF_MVVM_Flux_INotifyPropertyChanged
 {
     /// <summary>
     /// Interaction logic for App.xaml

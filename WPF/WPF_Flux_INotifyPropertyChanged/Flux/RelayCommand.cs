@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace WPF_Flux_INotifyPropertyChanged.Flux;
+namespace WPF_MVVM_Flux_INotifyPropertyChanged.Flux;
 public class RelayCommand : ICommand
 {
     private readonly Action _execute;
