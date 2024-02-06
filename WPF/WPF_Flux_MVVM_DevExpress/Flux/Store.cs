@@ -7,7 +7,6 @@ namespace WPF_Flux_MVVM_DevExpress.Flux;
 public sealed class Store<T> : ViewModelBase, IStore<T>
 {
     private readonly Reducer<T> _reduce;
-    private T _state;
 
     public Store(in T initialState, in Reducer<T> reducer)
     {
@@ -17,8 +16,8 @@ public sealed class Store<T> : ViewModelBase, IStore<T>
 
     public T State
     {
-        get { return _state; }
-        private set { SetProperty(ref _state, value, nameof(State)); }
+        get { return GetProperty(() => State); }
+        private set { SetProperty(() => State, value); }
     }
 
     public void Dispatch(IFluxAction action)
