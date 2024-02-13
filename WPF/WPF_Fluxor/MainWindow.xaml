@@ -16,7 +16,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center" />
         <TextBlock Text="{Binding Count}"
-                   FontSize="50"
+                   FontSize="25"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
