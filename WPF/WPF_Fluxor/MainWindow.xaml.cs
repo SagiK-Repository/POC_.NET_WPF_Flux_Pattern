@@ -24,12 +24,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         Store.InitializeAsync().Wait();
 
         InitializeComponent();
-     
+
         Count = 0;
         DataContext = this;
     }
 
-    private void CounterState_StateChanged(object sender, EventArgs e)
+    private void CounterState_StateChanged(object? sender, EventArgs e)
     {
         Count = CounterState.Value.CurrentNumber;
         OnPropertyChanged(nameof(Count));
@@ -47,10 +47,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         Dispatcher.Dispatch(action);
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+    #region PropertyChange
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     protected virtual void OnPropertyChanged(string propertyName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
+    #endregion
 }
