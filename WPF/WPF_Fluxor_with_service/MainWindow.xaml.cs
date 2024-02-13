@@ -48,10 +48,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     private void WeatherState_StateChanged(object? sender, EventArgs e)
     {
         WeatherState changedData = WeatherState.Value;
-        LoadedStatus = changedData.IsLoading == true ? "true" : "false";
+        LoadedStatus = changedData.IsLoading == true ? "Loading..." : "Done";
         OnPropertyChanged(nameof(LoadedStatus));
-        WeatherData = new ObservableCollection<Weather>(changedData.Forecasts);
-        OnPropertyChanged(nameof(WeatherData));
+        if (changedData.IsLoading == true)
+            WeatherData.Clear();
+        foreach(var data in changedData.Forecasts)
+            WeatherData.Add(data);
     }
     #endregion
 
