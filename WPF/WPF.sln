@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Flux_MVVM_DevExpress", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fluxor", "Fluxor", "{457BCF3A-60DB-4E21-82D5-CCD6A4C36388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Fluxor", "WPF_Fluxor\WPF_Fluxor.csproj", "{246205F9-7618-4DFE-B30A-A32250CFD31D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Fluxor", "WPF_Fluxor\WPF_Fluxor.csproj", "{246205F9-7618-4DFE-B30A-A32250CFD31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Fluxor_with_service", "WPF_Fluxor_with_service\WPF_Fluxor_with_service.csproj", "{5ACFB12B-A850-4A60-9000-86105F49362A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,12 +61,17 @@ Global
 		{246205F9-7618-4DFE-B30A-A32250CFD31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246205F9-7618-4DFE-B30A-A32250CFD31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246205F9-7618-4DFE-B30A-A32250CFD31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACFB12B-A850-4A60-9000-86105F49362A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACFB12B-A850-4A60-9000-86105F49362A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACFB12B-A850-4A60-9000-86105F49362A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACFB12B-A850-4A60-9000-86105F49362A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{246205F9-7618-4DFE-B30A-A32250CFD31D} = {457BCF3A-60DB-4E21-82D5-CCD6A4C36388}
+		{5ACFB12B-A850-4A60-9000-86105F49362A} = {457BCF3A-60DB-4E21-82D5-CCD6A4C36388}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2708BD86-6725-44D7-BE6A-1D0837B31E86}
