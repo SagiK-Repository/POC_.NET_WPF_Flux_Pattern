@@ -9,7 +9,7 @@ namespace WPF_Fluxor;
 public partial class MainWindow : Window, INotifyPropertyChanged
 {
     private readonly IStore Store;
-    public readonly IDispatcher Dispatcher;
+    public new readonly IDispatcher Dispatcher;
     public readonly IState<CounterState> CounterState;
 
     public int Count { get; set; }
