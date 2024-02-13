@@ -1,5 +1,4 @@
 ﻿using Fluxor;
-using System.Windows;
 using WPF_Fluxor.Action;
 using WPF_Fluxor.Model;
 
@@ -13,11 +12,4 @@ public class CounterReducer
     [ReducerMethod(typeof(DecreaseCounterAction))]
     public CounterState ReduceDecreaseCounterAction(CounterState state) =>
         new(currentNumber: state.CurrentNumber - 1);
-
-    [ReducerMethod]
-    public CounterState ReduceShowDialogAction(CounterState state, ShowDialogAction action)
-    {
-        MessageBox.Show(action.Title, action.Message);
-        return state; // 원하는 변화를 줄 수 있다.
-    }
 }
