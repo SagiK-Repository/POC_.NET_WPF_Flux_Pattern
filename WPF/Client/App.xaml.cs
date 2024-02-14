@@ -1,4 +1,5 @@
-﻿using Client.Extensions;
+﻿using Client.Common.DI;
+using Client.Extensions;
 using Fluxor;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -8,17 +9,31 @@ namespace Client
 {
     public partial class App : Application
     {
+        public IServiceProvider Services { get; private set; }
+
         protected override void OnStartup(StartupEventArgs e)
+        {
+            Services = ConfigureServices();
+
+            DISource.Resolver = Resolve;
+
+            var mainView = Services.GetRequiredService<MainWindow>();
+            mainView.Show();
+        }
+
+        private IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
             services.Configure();
             services.AddFluxor(o => o
                 .ScanAssemblies(typeof(App).Assembly));
 
-            IServiceProvider serviceProvider = services.BuildServiceProvider();
+            // 서비스 등록
+            ServiceConfigurator.Configure(services);
 
-            var mainView = serviceProvider.GetRequiredService<MainWindow>();
-            mainView.Show();
+            return services.BuildServiceProvider();
         }
+
+        object Resolve(Type type, object key, string name) => type == null ? null : Services.GetService(type);
     }
 }
