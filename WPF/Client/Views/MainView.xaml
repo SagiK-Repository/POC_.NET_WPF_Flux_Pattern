@@ -24,5 +24,14 @@
                 Command="{Binding DecreaseCommand}"
                 Width="100"
                 Height="30" />
+        <Label />
+        <Button Content="Show View"
+                Command="{Binding ShowView1Command}"
+                Width="100"
+                Height="30" />
+        <Button Content="Show Views"
+                Command="{Binding ShowView2Command}"
+                Width="100"
+                Height="30" />
     </StackPanel>
 </UserControl>
