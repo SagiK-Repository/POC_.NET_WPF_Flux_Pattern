@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Windows;
+using WPF_Fluxor_MVVM_DevExpress.Extensions;
 
 namespace WPF_Fluxor_MVVM_DevExpress
 {
@@ -10,7 +11,7 @@ namespace WPF_Fluxor_MVVM_DevExpress
         protected override void OnStartup(StartupEventArgs e)
         {
             var services = new ServiceCollection();
-            services.AddScoped<MainWindow>();
+            services.Configure();
             services.AddFluxor(o => o
                 .ScanAssemblies(typeof(App).Assembly));
 
