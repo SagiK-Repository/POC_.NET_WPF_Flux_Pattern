@@ -11,10 +11,20 @@
     <Window.DataContext>
         <common:DISource Type="{x:Type ViewModels:View1ViewModel}" />
     </Window.DataContext>
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center">
         <TextBlock Text="{Binding Count}"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="24"
                    Margin="0,0,0,20" />
-    </Grid>
+        <Button Content="Increase"
+                Command="{Binding IncreseCommand}"
+                Width="100"
+                Height="30" />
+        <Button Content="Decrease"
+                Command="{Binding DecreaseCommand}"
+                Width="100"
+                Height="30" />
+    </StackPanel>
 </Window>
