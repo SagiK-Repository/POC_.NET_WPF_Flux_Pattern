@@ -4,8 +4,8 @@
                  xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
                  xmlns:Views="clr-namespace:Client.Views"
                  Title="MainWindow"
-                 Height="800"
-                 Width="1000">
+                 Height="500"
+                 Width="500">
     <Grid>
         <Views:MainView />
     </Grid>

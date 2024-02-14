@@ -15,6 +15,8 @@
                 VerticalAlignment="Center">
         <TextBlock Text="{Binding Count}"
                    FontSize="24"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
                    Margin="0,0,0,20" />
         <Button Content="Increase"
                 Command="{Binding IncreseCommand}"
@@ -25,13 +27,13 @@
                 Width="100"
                 Height="30" />
         <Label />
-        <Button Content="Show View"
+        <Button Content="Show View1"
                 Command="{Binding ShowView1Command}"
                 Width="100"
                 Height="30" />
-        <Button Content="Show Views"
+        <Button Content="View 계속 생성"
                 Command="{Binding ShowView2Command}"
-                Width="100"
+                Width="120"
                 Height="30" />
     </StackPanel>
 </UserControl>
