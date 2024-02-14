@@ -27,8 +27,7 @@ namespace Client
             services.Configure();
             services.AddFluxor(o => o.ScanAssemblies(
                 typeof(App).Assembly,
-                typeof(Domain.Count.CountReducer).Assembly,
-                typeof(Domain.Count.CountState).Assembly
+                typeof(Domain.Count.CountReducer).Assembly
             ));
 
             // 서비스 등록
