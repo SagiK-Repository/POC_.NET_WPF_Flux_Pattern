@@ -1,8 +1,10 @@
 ﻿using DevExpress.Mvvm;
+using DevExpress.Mvvm.CodeGenerators;
 
 namespace WPF_Fluxor_MVVM_DevExpress.ViewModels
 {
-    public class MainViewModel : ViewModelBase
+    [GenerateViewModel]
+    public partial class MainViewModel : ViewModelBase
     {
 
     }
