@@ -7,8 +7,10 @@
              xmlns:common="clr-namespace:Client.Common.DI"
              mc:Ignorable="d"
              d:DesignHeight="300"
-             d:DesignWidth="300"
-             DataContext="{common:DISource Type={x:Type ViewModels:MainViewModel}}">
+             d:DesignWidth="300">
+    <UserControl.DataContext>
+        <common:DISource Type="{x:Type ViewModels:MainViewModel}" />
+    </UserControl.DataContext>
     <StackPanel HorizontalAlignment="Center"
                 VerticalAlignment="Center">
         <TextBlock Text="{Binding Count}"
