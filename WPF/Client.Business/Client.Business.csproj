@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Client.Domain\Client.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="View1ViewModel.cs">
       <SubType>Code</SubType>
     </Compile>
