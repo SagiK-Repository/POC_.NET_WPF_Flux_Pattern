@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using WPF_Fluxor_MVVM_DevExpress.ViewModels;
+﻿using Client.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace WPF_Fluxor_MVVM_DevExpress.Extensions;
+namespace Client.Extensions;
 
 public static class ServiceConfigurator
 {
