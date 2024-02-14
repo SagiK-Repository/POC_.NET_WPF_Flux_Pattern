@@ -18,13 +18,5 @@
                    VerticalAlignment="Center"
                    FontSize="24"
                    Margin="0,0,0,20" />
-        <Button Content="Increase"
-                Command="{Binding IncreseCommand}"
-                Width="100"
-                Height="30" />
-        <Button Content="Decrease"
-                Command="{Binding DecreaseCommand}"
-                Width="100"
-                Height="30" />
     </StackPanel>
 </Window>
