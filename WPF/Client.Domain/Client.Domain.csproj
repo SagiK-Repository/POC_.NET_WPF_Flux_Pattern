@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Fluxor" Version="5.9.1" />
+  </ItemGroup>
+  
 </Project>
