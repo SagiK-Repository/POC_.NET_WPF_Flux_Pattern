@@ -1,4 +1,4 @@
-﻿using Client.ViewModels;
+﻿using Client.Business;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Client.Extensions;
