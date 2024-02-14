@@ -1,6 +1,6 @@
 ﻿using DevExpress.Mvvm.CodeGenerators;
 
-namespace WPF_Fluxor_MVVM_DevExpress.Business
+namespace Client.Business
 {
     [GenerateViewModel]
     public partial class View2ViewModel

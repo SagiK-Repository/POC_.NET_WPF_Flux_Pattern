@@ -14,4 +14,13 @@
     <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="22.1.*-*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="View1ViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View2ViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
