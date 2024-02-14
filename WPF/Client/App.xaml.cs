@@ -9,15 +9,15 @@ namespace Client
 {
     public partial class App : Application
     {
-        public IServiceProvider Services { get; private set; }
+        public IServiceProvider ServiceProvider { get; private set; }
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            Services = ConfigureServices();
+            ServiceProvider = ConfigureServices();
 
             DISource.Resolver = Resolve;
 
-            var mainView = Services.GetRequiredService<MainWindow>();
+            var mainView = ServiceProvider.GetRequiredService<MainWindow>();
             mainView.Show();
         }
 
@@ -34,6 +34,6 @@ namespace Client
             return services.BuildServiceProvider();
         }
 
-        object Resolve(Type type, object key, string name) => type == null ? null : Services.GetService(type);
+        object Resolve(Type type, object key, string name) => type == null ? null : ServiceProvider.GetService(type);
     }
 }
