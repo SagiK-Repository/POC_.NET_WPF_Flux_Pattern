@@ -16,8 +16,6 @@ public partial class MainViewModel : ViewModelBase
     [GenerateProperty]
     int _Count;
 
-    public MainViewModel() { } // Xaml에서 조회하기 위해 필요
-
     public MainViewModel(IStore store, IDispatcher dispatcher, IState<CountState> counterState)
     {
         Store = store;
