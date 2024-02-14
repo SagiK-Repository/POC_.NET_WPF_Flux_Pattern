@@ -1,5 +1,6 @@
 ﻿using Client.Domain.Count;
 using Client.Domain.Count.Action;
+using Client.Domain.Interface.View;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.CodeGenerators;
 using Fluxor;
@@ -9,6 +10,7 @@ namespace Client.Business;
 [GenerateViewModel]
 public partial class MainViewModel : ViewModelBase
 {
+    private readonly IServiceProvider _service;
     private readonly IStore Store;
     public readonly IDispatcher Dispatcher;
     public readonly IState<CountState> CountState;
@@ -16,8 +18,9 @@ public partial class MainViewModel : ViewModelBase
     [GenerateProperty]
     int _Count;
 
-    public MainViewModel(IStore store, IDispatcher dispatcher, IState<CountState> counterState)
+    public MainViewModel(IServiceProvider service, IStore store, IDispatcher dispatcher, IState<CountState> counterState)
     {
+        _service = service;
         Store = store;
         Dispatcher = dispatcher;
         CountState = counterState;
@@ -31,11 +34,31 @@ public partial class MainViewModel : ViewModelBase
     [GenerateCommand]
     void Decrease() => Dispatcher.Dispatch(new DecreaseAction());
 
+    [GenerateCommand]
+    void ShowView1()
+    {
+        var view = _service.GetService(typeof(IView1Dialog)) as IView1Dialog;
+        view.Show();
+    }
+
+    [GenerateCommand]
+    void ShowView2()
+    {
+        var view = _service.GetService(typeof(IView2Dialog)) as IView2Dialog;
+        view.Show();
+    }
+
     #region Initialize
     private void Initialize()
     {
         SetChangeEvent();
+        ValueInitialize();
         Store.InitializeAsync().Wait();
+    }
+
+    private void ValueInitialize()
+    {
+        Count = CountState.Value.Number;
     }
 
     private void SetChangeEvent()
