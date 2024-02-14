@@ -25,8 +25,11 @@ namespace Client
         {
             var services = new ServiceCollection();
             services.Configure();
-            services.AddFluxor(o => o
-                .ScanAssemblies(typeof(App).Assembly));
+            services.AddFluxor(o => o.ScanAssemblies(
+                typeof(App).Assembly,
+                typeof(Domain.Count.CountReducer).Assembly,
+                typeof(Domain.Count.CountState).Assembly
+            ));
 
             // 서비스 등록
             ServiceConfigurator.Configure(services);
