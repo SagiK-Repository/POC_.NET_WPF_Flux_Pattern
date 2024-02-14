@@ -10,6 +10,18 @@
     <UserControl.DataContext>
         <ViewModels:MainViewModel />
     </UserControl.DataContext>
-    <Grid>
-    </Grid>
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+        <TextBlock Text="{Binding Count}"
+                   FontSize="24"
+                   Margin="0,0,0,20" />
+        <Button Content="Increase"
+                Command="{Binding IncreseCommand}"
+                Width="100"
+                Height="30" />
+        <Button Content="Decrease"
+                Command="{Binding DecreaseCommand}"
+                Width="100"
+                Height="30" />
+    </StackPanel>
 </UserControl>
