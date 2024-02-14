@@ -1,4 +1,6 @@
 ﻿using Client.Business;
+using Client.Domain.Interface.View;
+using Client.Views;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Client.Extensions;
@@ -22,12 +24,16 @@ public static class ServiceConfigurator
     private static IServiceCollection AddViews(this IServiceCollection services)
     {
         services.AddScoped<MainWindow>();
+        services.AddScoped<IView1Dialog, View1>();
+        services.AddTransient<IView2Dialog, View2>();
         return services;
     }
 
     private static IServiceCollection AddViewModels(this IServiceCollection services)
     {
         services.AddScoped<MainViewModel>();
+        services.AddScoped<View1ViewModel>();
+        services.AddScoped<View2ViewModel>();
         return services;
     }
 
