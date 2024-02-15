@@ -35,3 +35,10 @@
 
 # 고찰
 ### Flux 패턴 활용이 비즈니스에 적합한가? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/17)
+
+<br>
+
+# Fluxor
+### Fluxor (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/9)
+
+
