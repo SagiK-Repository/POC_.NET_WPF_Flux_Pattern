@@ -16,9 +16,19 @@
 
 # 기본
 ### Flux? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/10)
+
+<br>
+
 # WPF
 ### .Net WPF 기본형 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/1)
+### .Net WPF MVVM (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/2)
+
+<br>
+
 # Flux in WPF
 ### .Net WPF Flux (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/7)
+
+<br>
+
 # 고찰
 ### Flux 패턴 활용이 비즈니스에 적합한가? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/17)
