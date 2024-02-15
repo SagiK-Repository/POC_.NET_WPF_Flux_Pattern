@@ -29,6 +29,7 @@
 # Flux in WPF
 ### .Net WPF Flux (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/7)
 ### .Net WPF MVVM Flux_INotifyPropertyChanged (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/12)
+### .Net WPF MVVM Flux With DevExpress (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/13)
 
 <br>
 
