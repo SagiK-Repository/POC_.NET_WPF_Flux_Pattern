@@ -30,7 +30,6 @@ namespace Client
                 typeof(Domain.Count.CountReducer).Assembly
             ));
 
-            // 서비스 등록
             ServiceConfigurator.Configure(services);
 
             return services.BuildServiceProvider();

@@ -1,14 +1,13 @@
 ﻿using Client.Domain.Count;
 using Client.Domain.Count.Action;
 using Client.Domain.Interface.View;
-using DevExpress.Mvvm;
 using DevExpress.Mvvm.CodeGenerators;
 using Fluxor;
 
 namespace Client.Business;
 
 [GenerateViewModel]
-public partial class MainViewModel : ViewModelBase
+public partial class MainViewModel
 {
     private readonly IServiceProvider _service;
     private readonly IStore Store;
