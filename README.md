@@ -22,6 +22,7 @@
 # WPF
 ### .Net WPF 기본형 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/1)
 ### .Net WPF MVVM (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/2)
+### .Net WPF DevExpress MVVM (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/3)
 
 <br>
 
