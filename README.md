@@ -13,3 +13,32 @@
 ### 참조
 
 <br><br>
+
+# 기본
+### Flux? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/10)
+
+<br>
+
+# WPF
+### .Net WPF 기본형 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/1)
+### .Net WPF MVVM (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/2)
+### .Net WPF DevExpress MVVM (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/3)
+
+<br>
+
+# Flux in WPF
+### .Net WPF Flux (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/7)
+### .Net WPF MVVM Flux_INotifyPropertyChanged (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/12)
+### .Net WPF MVVM Flux With DevExpress (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/13)
+
+<br>
+
+# 고찰
+### Flux 패턴 활용이 비즈니스에 적합한가? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/17)
+
+<br>
+
+# Fluxor
+### Fluxor (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/9)
+
+
