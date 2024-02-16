@@ -1,5 +1,7 @@
 ﻿using Client.Business;
 using Client.Domain.Interface.View;
+using Client.Domain.Service;
+using Client.Service;
 using Client.Views;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,15 +11,16 @@ public static class ServiceConfigurator
 {
     public static IServiceCollection Configure(this IServiceCollection services)
     {
-        services.AddWpfUI();
+        services.Service();
         services.AddViews();
         services.AddViewModels();
 
         return services;
     }
 
-    private static IServiceCollection AddWpfUI(this IServiceCollection services)
+    private static IServiceCollection Service(this IServiceCollection services)
     {
+        services.AddScoped<ICountService, CountService>();
         return services;
     }
 
