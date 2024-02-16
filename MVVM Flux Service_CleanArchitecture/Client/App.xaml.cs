@@ -15,6 +15,9 @@ namespace Client
         {
             ServiceProvider = ConfigureServices();
 
+            var store = ServiceProvider.GetService<IStore>();
+            store.InitializeAsync().Wait();
+
             DISource.Resolver = Resolve;
 
             var mainView = ServiceProvider.GetRequiredService<MainWindow>();

@@ -52,7 +52,6 @@ public partial class MainViewModel
     {
         SetChangeEvent();
         ValueInitialize();
-        Store.InitializeAsync().Wait();
     }
 
     private void ValueInitialize()
