@@ -14,6 +14,10 @@
 
 <br><br>
 
+# WPF Flux 정리 문서 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/21)
+
+<br><br>
+
 # 기본
 ### Flux? (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/10)
 
