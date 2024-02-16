@@ -1,4 +1,4 @@
-﻿using Client.Domain.Service;
+﻿using Client.Business.Domain.ServiceInterface;
 
 namespace Client.Service;
 

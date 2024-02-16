@@ -1,4 +1,4 @@
-﻿using Client.Domain.Interface.View;
+﻿using Client.Business.Domain.ViewInterface;
 using System.Windows;
 
 namespace Client.Views;

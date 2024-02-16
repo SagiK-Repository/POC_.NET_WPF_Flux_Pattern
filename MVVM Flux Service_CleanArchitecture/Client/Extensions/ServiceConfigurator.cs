@@ -1,6 +1,6 @@
 ﻿using Client.Business;
-using Client.Domain.Interface.View;
-using Client.Domain.Service;
+using Client.Business.Domain.ServiceInterface;
+using Client.Business.Domain.ViewInterface;
 using Client.Service;
 using Client.Views;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,8 +1,9 @@
-﻿using Client.Domain.Count.Action;
-using Client.Domain.Service;
+﻿using Client.Business.Domain.ServiceInterface;
+using Client.Domain.Count;
+using Client.Domain.Count.Action;
 using Fluxor;
 
-namespace Client.Domain.Count;
+namespace Client.Reduce;
 
 public class CountReducer
 {

@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View1ViewModel.cs">
+    <Compile Update="ViewModel\View1ViewModel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View2ViewModel.cs">
+    <Compile Update="ViewModel\View2ViewModel.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

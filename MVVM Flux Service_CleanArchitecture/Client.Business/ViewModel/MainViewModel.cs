@@ -1,6 +1,6 @@
-﻿using Client.Domain.Count;
+﻿using Client.Business.Domain.ViewInterface;
+using Client.Domain.Count;
 using Client.Domain.Count.Action;
-using Client.Domain.Interface.View;
 using DevExpress.Mvvm.CodeGenerators;
 using Fluxor;
 

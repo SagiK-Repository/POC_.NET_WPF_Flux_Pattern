@@ -1,5 +1,5 @@
-﻿using System.Windows.Markup;
-using System;
+﻿using System;
+using System.Windows.Markup;
 
 namespace Client.Common.DI;
 

@@ -1,4 +1,4 @@
-﻿namespace Client.Domain.Interface.View;
+﻿namespace Client.Business.Domain.ViewInterface;
 
 public interface IView1Dialog
 {
