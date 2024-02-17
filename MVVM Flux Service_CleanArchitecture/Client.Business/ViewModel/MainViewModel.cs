@@ -10,17 +10,15 @@ namespace Client.Business;
 public partial class MainViewModel
 {
     private readonly IServiceProvider _service;
-    private readonly IStore Store;
     public readonly IDispatcher Dispatcher;
     public readonly IState<CountState> CountState;
 
     [GenerateProperty]
     int _Count;
 
-    public MainViewModel(IServiceProvider service, IStore store, IDispatcher dispatcher, IState<CountState> counterState)
+    public MainViewModel(IServiceProvider service, IDispatcher dispatcher, IState<CountState> counterState)
     {
         _service = service;
-        Store = store;
         Dispatcher = dispatcher;
         CountState = counterState;
 
