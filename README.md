@@ -46,3 +46,4 @@
 ### Fluxor (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/9)
 ### WPF Flux 정리 문서 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/21)
 ### [따라해보기] Fluxor 사용 가이드라인 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/20)
+### flux 와 redux 의 차이점 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/19)
