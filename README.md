@@ -44,5 +44,5 @@
 
 # Fluxor
 ### Fluxor (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/9)
-
+### WPF Flux 정리 문서 (https://github.com/SagiK-Repository/POC_.NET_WPF_Flux_Pattern/issues/21)
 
