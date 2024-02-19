@@ -1,4 +1,4 @@
-문서정보 : 2024.01.23.~ 작성, 작성자 [@SAgiKPJH](https://github.com/SAgiKPJH)
+문서정보 : 2024.01.23.~02.19. 작성, 작성자 [@SAgiKPJH](https://github.com/SAgiKPJH)
 
 <br>
 
